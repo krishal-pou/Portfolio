@@ -715,3 +715,65 @@ footer{
   gap:1.2rem;
   /* z-index: 0; */
 }
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section-left,
+  .hero-section-right {
+    width: 100%;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+  }
+
+  .skills-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Media Query for Mobile Phones */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-section-heading {
+    font-size: 24px;
+  }
+
+  .btn-pink {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .project-card {
+    width: 95%;
+    margin: 10px 0;
+  }
+
+  .skills-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.hero-section-heading {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Minimum, preferred, and maximum size */
+}
