@@ -828,6 +828,13 @@ footer{
     font-weight: bold;
     transition: all 3s; */
   }
+  .project-number{
+    display: none;
+  }
+  #project2{
+    /* display: none; */
+    right: 10%;
+  }
   
 }
 
@@ -894,33 +901,7 @@ footer{
   .hire{
     justify-content: center;
   }
-  /* .nav-items {
-    display: none; 
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    padding: 1rem;
-    z-index: 1;
-    border-top: 1px solid #ddd;
-  }
-
-  .nav-items.active { 
-    display: flex;
-  }
-
-  .nav-items div {
-    text-align: center;
-  }
-  .hamburger {
-    display: block;
-    font-size: 24px;
-    color: var(--textColor);
-    cursor: pointer;
-  } */
+  
   .faded-text{
     /* position:relative;
     user-select:none;
@@ -939,7 +920,13 @@ footer{
     bottom: -25%;
     gap:1.2rem;
   }
-
+  .project-number{
+    display: none;
+  }
+  #project2{
+    /* display: none; */
+    right: 10%;
+  }
 }
 
 .hero-section-heading {
