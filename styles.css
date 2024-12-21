@@ -816,6 +816,18 @@ footer{
     width:fit-content;
     /* gap:1.2rem; */
   }
+  .faded-text{
+    /* position:relative;
+    user-select:none;
+    font-size: 2em;
+    color:rgb(231,231,231); */
+    /* font-size: 1em; */
+    font-size:5em;
+    bottom: 13%;
+    /* left: -2%;
+    font-weight: bold;
+    transition: all 3s; */
+  }
   
 }
 
@@ -914,7 +926,7 @@ footer{
     user-select:none;
     font-size: 2em;
     color:rgb(231,231,231); */
-    
+    font-size: 5em;
     bottom: 13%;
     /* left: -2%;
     font-weight: bold;
