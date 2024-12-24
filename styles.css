@@ -834,8 +834,30 @@ footer{
   #project2{
     /* display: none; */
     right: 10%;
+    margin-left: 20%;
   }
-  
+  form {
+    margin-left: 0;
+    width: 90%;
+    left: -10%;
+   /* Reduce the form size slightly */
+  }
+  /* .user-image{
+    display: contents;
+    transform: scale(0.9);
+    width: 90%;
+  } */
+ 
+  .hero-section-right{
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 100%; /* Adjust the user image size to fit the screen width */
+    max-width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    padding: auto;
+    justify-content: left;
+    transform: scale(0.9)
+  }
 }
 
 /* Media Query for Mobile Phones */
@@ -926,6 +948,25 @@ footer{
   #project2{
     /* display: none; */
     right: 10%;
+    margin-left: 20%;
+  }
+
+  form {
+    margin-left: 0;
+    width: 90%;
+    left: -100%;
+    display: flex;
+     /* Reduce the form size slightly */
+  }
+  .hero-section-right{
+    display: block; /* Ensure the image is displayed as a block element */
+    width: 100%; /* Adjust the user image size to fit the screen width */
+    max-width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    padding: auto;
+    /* justify-content: left; */
+    transform: scale(0.9);
   }
 }
 
