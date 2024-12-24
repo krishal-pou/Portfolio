@@ -95,10 +95,18 @@
         padding: 1rem;
         z-index: 1;
         border-top: 1px solid #ddd;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+    transform: translateY(-100px);
       }
 
       .nav-items.active { /* Show navigation items when active */
         display: flex;
+        opacity: 1;
+        transition: all 01s ease-in-out;
+        /* opacity: 0; */
+    /* transform: translateY(-20px); */
+    transform: translateY(0);
       }
 
       .nav-items div {
@@ -111,6 +119,16 @@
         color: var(--textColor);
         cursor: pointer;
       }
+      .content {
+    transition: all 0.3s ease-in-out;
+}
+      .content.slide-down {
+    transform: translateY(15%);
+    .faded-text{
+    display: none;
+}
+}
+
     }
 
     /* Desktop View */
@@ -120,14 +138,7 @@
       }
     }
 
-    .content {
-  margin: 50px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.content.slide-down {
-  transform: translateY(200px); /* Adjust height based on nav-container height */
-}
+ 
   </style>
 
 </head>
@@ -154,7 +165,7 @@
                 <div class="hamburger" id="hamburger">&#9776;</div>
 
             </div>
-
+            <main class="content">
             <div class="hero-section">
 
                 <div class="faded-text">Krishal</div>
@@ -379,8 +390,8 @@
                 </div>
                 
                 <div>
-                  <button type="submit" class="btn-pink" id="submit-btn" >
-                    Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+                  <button type="submit" class="btn-pink" id="submit-btn" ><a href="#home">
+                    Send Message<i class="submit-icon fa-solid fa-paper-plane"></i></a>
                   </button>
                 </div>
               </form>
@@ -423,7 +434,7 @@
             </div>
           </div>
         </footer>
-
+    </main>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
@@ -444,10 +455,11 @@
 
     const hamburger = document.getElementById('hamburger');
     const navItems = document.getElementById('navItems');
-
+    const content = document.querySelector('.content');
     // Toggle nav items visibility on click
     hamburger.addEventListener('click', () => {
       navItems.classList.toggle('active');
+      content.classList.toggle('slide-down');
     });
   </script>
 </body>
