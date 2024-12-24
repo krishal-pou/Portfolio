@@ -858,6 +858,11 @@ footer{
     justify-content: left;
     transform: scale(0.9)
   }
+  #project1, #project2, #project3, #project4 {
+    background-size: cover; /* Adjust the background image size to cover the element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
 }
 
 /* Media Query for Mobile Phones */
@@ -968,6 +973,11 @@ footer{
     /* justify-content: left; */
     transform: scale(0.9);
   }
+  #project1, #project2, #project3, #project4 {
+    background-size: cover; /* Adjust the background image size to cover the element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
 }
 
 .hero-section-heading {
